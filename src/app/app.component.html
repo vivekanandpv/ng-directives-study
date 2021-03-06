@@ -1,8 +1,10 @@
+<ng-template #pTemp let-name="firstName" let-city="currentCity">
+  <p>This is a paragraph {{ title }} / {{ name }} / {{ city }}</p>
+</ng-template>
+
 <div class="container p-5">
   <h3>Angular Directives Study</h3>
   <hr />
 
-  <p *appIfClone="active">I am active</p>
-
-  <p *appIfClone="!active">I am inactive</p>
+  <ng-container *ngTemplateOutlet="pTemp; context: person"></ng-container>
 </div>

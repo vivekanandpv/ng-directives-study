@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  TemplateRef,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +12,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  active = true;
-
-  constructor() {
-    setInterval(() => {
-      this.active = !this.active;
-    }, 1000);
-  }
+  title = 'Good morning!';
+  person = { firstName: 'Vinayak', currentCity: 'Mumbai' };
 }
