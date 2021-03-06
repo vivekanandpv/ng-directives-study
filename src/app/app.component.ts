@@ -13,5 +13,4 @@ import {
 })
 export class AppComponent {
   title = 'Good morning!';
-  person = { firstName: 'Vinayak', currentCity: 'Mumbai' };
 }
